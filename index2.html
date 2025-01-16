@@ -37,10 +37,11 @@
         </style>
         <body>
         <div>
-            <h3 align="center"><font color="white">Fetch Fantasy VII: Cooking Core</h3>
+            <h1 align="center"><font color="white">Fetch Fantasy VII: Cooking Core</h3>
         </div>        
         <div>
-            <h4>Motivation</h4>
+            <h2>Motivation</h4>
+            <p>We use Low-level Subtask Expert agent and High-Level Choreographer to achieve the openAI gymnasium's "PickandPlace-v1" game to simulate fetch robot take the object into pot!!!!!! We first try to directly use stable-baseline3 to train agent in standard PickandPlace env but we found it is too hard due to the sparse reward of gripper. Then we decide to decompose the problem into three parts: approach, grab, and to goal position by using the method introduced by https://github.com/lmarza/DRL-for-Pick-and-Place-Task-subtasks. By training the low level and high level agents, we overcom the origin PickandPlace environment. Then we use the kitchen scene modified from Franka-Kitchen environment to traint the agent. It is slower than PickandPlace because there are multiple high mass objective such as lights. We modified the env file to let the object and goal's positions more feasible to our agent.</p>
         </div>
             <div class="box">
                 <div class="left">
